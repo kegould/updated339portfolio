@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">
+    <title>Kate Gould</title>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G7MLPRP7H0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-G7MLPRP7H0');
+    </script>
+  </head>
+
+  <body>
+    <div class="skip"><a href="#main">skip to main content</a></div>
+    <nav class="sticky" id="navbar">
+        <ul>
+          <li><a href="index.html" class="current"> main </a></li>
+          <li><a href="projects.html"> past projects </a></li>
+          <li><a href="personal.html"> about me </a></li>
+          <li><a href="gallery.html"> gallery </a></li>
+         
+        </ul>
+      </nav>
+    
+      
+    <header class="one">
+      <h1><mark>kate gould</mark></h1>
+      <p><mark>welcome to my digital portfolio. here you can find my past work, learn a little about me and my work, and contact me.</mark></p>
+    </header>
+   
+  <main class="container" id="main">
+    
+    <div class="method text">
+      <a id="method"></a>
+      <h2>what you can find here</h2>
+      <p>If you’re interested in learning a little bit more about me, head over to the <a href="personal.html">about me</a> page. For more information on my experience and past projects, check out my <a href="projects.html">past projects</a> page. If you’re trying to contact me, fill out <a href="#form">the form here</a> . Lastly, for a glimpse into some of the things I love most, take a look at <a href="gallery.html">my gallery</a>.
+      </p>
+    </div>
+
+    <div class="about text">
+      <a id="about"></a>
+      <h2>contact me</h2>
+      <p  >Feel free to use the form <a href="#form">below</a> to contact me about any questions, or just to get in touch. Additionally, you can email me kegould@umich.edu.</p>
+      
+    </div>
+
+    <div class="client text">
+      <a id="client"></a>
+      <h2>about me</h2>
+      <p>I am a rising Senior at the University of Michigan's School of Information. I am looking to further develop my professional network and grow my experience in the field of information analysis. I am always open to network and discuss potential professional opportunities.
+      </p>
+    </div>
+
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <a href="#">
+          <div class="flip-card-front">
+            <img src="img/flip1.png" alt="picture from my food account" style="width:400px;height:265px;">
+        </div>
+      </a>
+        <div class="flip-card-back">
+          <h1>fun fact:</h1>
+          <p>I run a food account on Instagram</p>
+          <p>@k8justate</p>
+        </div>
+      </div>
+    </div>
+
+  <div class="form" id="form">
+    <form action="https://formspree.io/f/xdopqpyg" method="POST">
+      <label for="fname">first name:</label>
+      <input type="text" id="fname" name="firstname" placeholder="your name..">
+
+      <label for="lname">last name:</label>
+      <input type="text" id="lname" name="lastname" placeholder="your last name..">
+    
+      <label for="email">email:</label>
+      <input type="text" id="email" name="email" placeholder="your email..">
+      
+      <label for="note">your message:</label>
+      <textarea id="note" name="note" placeholder="what's up?"></textarea>
+
+      <button type="submit">submit</button>
+    
+    </form>
+
+  </div>
+
+  </main>
+  <footer>
+    <p>kate gould <br/>
+      &copy; 2021</p>
+      <a class="footer" href ="https://www.linkedin.com/in/kate-gould-599818201/" target="_blank">linkedin</a><br>
+  </footer>
+
+  <script>
+    window.onscroll = function() {myFunction()};
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+}
+
+  </script>
+  </body>
+</html>

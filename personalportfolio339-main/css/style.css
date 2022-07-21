@@ -1,0 +1,984 @@
+body{
+  background-color: white;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight:lighter;
+}
+p{
+  font-weight:lighter;
+}
+
+h1{
+  font-size: 50px;
+  line-height: 1;
+  padding: 40px 0;
+  text-align: center;
+  color:black;
+  font-family: 'Roboto', sans-serif;
+  font-weight:500;
+}
+
+h2{
+  font-size: 32px;
+  line-height: 1.5;
+}
+
+nav li{
+  display:block;
+  padding-right:20px;
+  text-align:center;
+
+}
+
+nav{
+  /*background-color: #c2d1e5;;*/
+  /*background-color:#bde2f5;*/
+  background-color: black;
+  padding: 25px 0; 
+  text-align: left;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+footer{
+  background-color: black;
+  color: white;
+  padding-top: 30px;
+  margin-top:30px;
+  text-align: center;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+a.footer{
+  color:white;
+}
+
+header p{
+  color: black;
+  text-transform:bold;
+  font-size: 24px;
+  padding: 0 100px;
+  text-align: center;
+
+ /* background-color: white;*/
+  background-clip:content-box;
+  
+}
+mark{
+  /*background-color:white;*/
+  font-weight:lighter;
+}
+h1 mark{
+  font-weight:normal;
+}
+
+header p text{
+  border:50px black solid;
+}
+
+nav a{
+  text-decoration:none;
+  color: white;
+  font-weight: bold;
+
+}
+a:hover, a:focus{
+  text-decoration:underline;
+}
+
+
+.skip a{
+  background: white;
+  left: 0;
+  padding: 7px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+  position:absolute;
+  top:-50px;
+  
+
+}
+.skip a:focus{
+  top:10px;
+
+}
+a:focus{
+  border-top-style:groove;
+  border-bottom-style:groove;
+  border-top-width:2px;
+  border-bottom-width:2px;
+}
+.container{
+  display:grid;
+  grid-template-columns: 1fr 3fr 3fr 1fr;
+  grid-template-rows: auto auto auto auto auto;
+  row-gap:20px;
+
+}
+a.current:link, a.current:visited{
+  color:white;
+  /* font-style:italic; */
+  border:1px dashed white;
+
+  /* border:1px dashed white; */
+
+}
+.flip-card{
+  grid-column:2/span 2;
+  grid-row:5;
+  margin-left:auto;
+  margin-right:auto;
+}
+.flip-card-front{
+  border:5px solid black;
+}
+.flip-card-back{
+  text-align:center;
+  padding:0px;
+}
+div.flip-card-back p{
+  color:black;
+}
+.flip-card-back h1{
+  padding:0px;
+}
+header#main{
+  margin-bottom:100px;
+}
+.containerproject{
+  display:grid;
+  grid-template-columns: 1fr 3fr 3fr 1fr;
+  grid-template-rows: auto auto auto auto auto auto auto auto;
+  row-gap:20px;
+
+}
+.kglogo{
+  grid-row:1/span 1;
+  grid-column:2/span 2;
+  /*border:5px solid black;*/
+  display:block;
+  padding:0;
+  margin-left:auto;
+  margin-right:auto;
+}
+.kglogo img{
+  display:block;
+  border:5px solid black;
+}
+.fintechimg{
+  grid-row:3/span 1;
+  grid-column:2/span 2;
+  border:5px solid black;
+  display:block;
+  padding:0;
+}
+.fintechimg img{
+  display:block;
+}
+.f15img{
+  grid-row:5/span 1;
+  grid-column: 2/ span 2;
+  border:5px solid black;
+  display:block;
+  padding:0;
+
+}
+.f15img img{
+  display:block;
+}
+.umsiimg{
+  grid-row:7/span 1;
+  grid-column: 2/span 2;
+  border:5px solid black;
+  display:block;
+  padding:0;
+}
+.umsiimg img{
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+}
+header.one{
+  background-attachment: fixed; /* Parallax effect */     
+  background-position: center;  /* Parallax effect */
+  background-repeat: no-repeat; /* Parallax effect */
+  background-size: cover;       /* Parallax effect */
+  color: white;
+  height: 400px;                /* Parallax effect */
+    
+  margin-bottom:25px;
+  background-color:white;
+  background-image:url(../img/newmichbighouse.png)
+ 
+
+}
+
+.about, .method, .client, .contacts{
+
+  grid-column:2/span 2;
+}
+
+.about-image, .method-image, .client-image, .contact-image{
+
+  grid-column:1/ -1;
+  max-height:650px;
+  overflow:hidden;
+}
+
+.kgsitedesign, .about-image{
+   grid-row:2/ span 1;
+   grid-column:2/span 2;
+
+}
+
+.mft, .method-image{
+   grid-row:4/ span 1;
+   grid-column:2/span 2;
+}
+
+.f15txt, .client-image{
+    grid-row:6/ span 1;
+    grid-column:2/span 2;
+}
+
+.riseuptxt, .contact-image{
+
+    grid-row:8/ span 1;
+    grid-column:2/span 2;
+}
+
+.text{
+  background-color: rgba(255, 255, 255, .8);
+  border: 5px solid black;
+  padding: 30px;
+  text-align:center;
+  align-self:center;
+  margin-top:0px;
+
+}
+.responsive {
+    width: 100%;
+  }
+  /* GALLERY MOBILE CSS*/
+.gallery-images {
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 20px;
+    justify-content: center;
+    align-content:center;
+}
+.gallery-images img{
+    object-fit: cover;
+    width: 100%;
+    padding: 0 1px; 
+    background-color: rgb(214, 214, 214);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* GALLERY MOBILE CSS END*/
+.about-me{
+  text-align:center;
+  padding-bottom:40px;
+  padding-left:40px;
+  padding-right:40px;
+}
+.about-txt{
+  padding-top:20px;
+}
+.about-p{
+  text-align:left;
+  margin-top:0px;
+  margin-left:10px;
+  margin-right:10px;
+  color:rgba(94, 94, 93, 0.877);
+  margin-bottom:50px;
+}
+.about-header{
+  margin-top:15px;
+  margin-left:10px;
+  text-align:center;
+  padding:1em;
+  font-size: 32px;
+  line-height: 1.5;
+}
+.about-img{
+  margin-top:15px;
+  border:2px solid rgba(94, 94, 93, 0.877);
+}
+.contact-p{
+  text-align:center;
+  margin-top:0px;
+  color:rgba(94, 94, 93, 0.877);
+  margin-bottom:50px;
+  margin-right:20px;
+  margin-left:20px;
+}
+.form{
+  grid-row:1/span 1;
+  grid-column:3/span 2;
+  padding:20px;
+  background-color:#bbcde1;
+}
+label{
+  font-weight:bold;
+}
+input[type=text], input[type=email], textarea{
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid rgba(94, 94, 93, 0.877);;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+button{
+  font-family:'Roboto', sans-serif;
+  font-size:large;
+}
+.form{
+  grid-column:2/span 2;
+  grid-row:4/span 1;
+
+}
+
+figcaption{
+  font-family:'roboto',sans-serif;
+  font-weight:lighter;
+  text-align:center;
+}
+
+
+
+/*below is desktop view me thinks USED TO BE 880 PX I CHANGED TO 1024 PX */
+@media all and (min-width: 1024px){
+
+  a.current:link, a.current:visited{
+    color:white;
+    /* font-style:italic; */
+    border:none;
+    box-shadow:0 0 0px 10px #bbcde1;
+    background-color: #bbcde1;
+    /* text-decoration: white underline; */
+    /* border:1px dashed white; */
+  
+  }
+  .skip a{
+    background: white;
+    left: 0;
+    padding: 7px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+    position:absolute;
+    top:-50px;
+    
+  
+  }
+  .skip a:focus{
+    top:50px;
+  
+  }
+  .about-me{
+    display:grid;
+    grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+    grid-template-rows:.8fr .3fr;
+    column-gap:100px;
+  }
+  #fading{
+    grid-column:3/span 1;
+    grid-row:1;
+  }
+
+  img.about-img{
+    width:30%;
+    display:block;
+    padding:0px;
+    margin:0px;
+    position:absolute;
+    
+  }
+  #top{
+    z-index: 1;
+  }
+  #fading img#top {
+    animation-name: FadeInOut;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+    animation-direction: alternate;
+    -webkit-animation-name: FadeInOut;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 6s;
+    -webkit-animation-direction: alternate;
+    }
+  @keyframes FadeInOut {
+    0% {opacity:1;}
+    /*25% {opacity:.75;}*/
+    /*50% {opacity:.5;}*/
+    100% {opacity:0;}
+  }
+  @-webkit-keyframes FadeInOut {
+    0% {opacity:1;}
+   /* 25% {opacity:.75;}*/
+    /*50% {opacity:.5;} */
+    100% {opacity:0;}
+  }
+
+  img{
+     width:100%;
+  }
+    
+  nav{
+    display:flex;
+    justify-content:flex-end;
+    padding: 10px;
+    vertical-align:middle;
+    text-align:right;
+    z-index:2;
+  }
+  nav li{
+    display:inline;
+    padding-right:20px;
+    text-align:center;
+  
+  }
+  header.one{
+    margin-bottom:0px;
+    height:25em;
+  }
+
+  .container{
+    display:grid;
+    grid-template-columns:1fr 1.5fr 2fr .5fr 2fr 1.5fr  1fr;
+    grid-template-rows:100px 300px 300px 500px 100px;
+    margin-bottom:20px;
+  }
+  .containerproject{
+    display:grid;
+    grid-template-columns:50px 1fr 50px 1fr  50px;
+    grid-template-rows:100px auto auto auto auto auto;
+    margin-bottom:20px;
+  }
+  .kglogo {
+    grid-column:2/span 1;
+    grid-row:2/span 1;
+    width:400px;
+    margin-left:50px;
+    
+    }
+  .kglogo img{
+    display:block;
+  }
+  .kgsitedesign{
+    grid-column:4/span 1;
+    grid-row:2;
+  }
+  .fintechimg{
+    width:400px;
+    grid-column:4/span 1;
+    grid-row:3;
+    margin-left:100px;
+  }
+  .fintechimg img{
+    display:block;
+  }
+  .mft{
+    grid-row:3;
+    grid-column:2/span 1;
+  }
+  .f15img{
+    width:400px;
+    grid-column:2/span 1;
+    grid-row:5;
+    margin-left:50px;
+  }
+  .f15img img{
+    display:block;
+  }
+  .f15txt{
+    grid-column:4/span 1;
+    grid-row:5;
+  }
+  .riseuptxt{
+    grid-column:2/span 1;
+    grid-row:6;
+  }
+  .umsiimg{
+    width:400px;
+    grid-column:4/span 1;
+    grid-row:6;
+    margin-left:100px;
+  }
+  .umsi img{
+    display:block;
+  }
+  .form{
+    margin-left:auto;
+    margin-right:auto;
+    grid-column:2/span 5;
+    grid-row:4;
+    
+  }
+
+
+  .about {
+    grid-column:5/span 2;
+    grid-row:2;
+    height:265px;
+  }
+  .method{
+    grid-column:2/span 2;
+    grid-row:2;
+  }
+  .client{
+    grid-column:2/span 2;
+    grid-row:3;
+    height:265px;
+  }
+  .method-image, .contact-image{
+    grid-column:4/span 1;
+    width:200px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:20%;
+    /* border: 5px solid black;*/
+  }
+
+  #projp{
+    text-align:center;
+    margin:auto;
+  }
+  .about-image, .client-image, .method, .contacts{
+    grid-column:2/ span 2;
+  }
+  div.about:hover,div.method:hover,div.client:hover,div.contacts:hover{
+    background-color:#bbcde1;
+  }
+  div.kgsitedesign:hover,div.mft:hover,div.f15txt:hover,div.riseuptxt:hover{
+    background-color:#bbcde1;
+  }
+
+  .flip-card {
+    background-color: transparent;
+    width: 400px;
+    height: 275px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    grid-column:5/span 2;
+    grid-row:3;
+
+  }
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  .flip-card:hover .flip-card-inner,
+  .flip-card:focus-within .flip-card-inner,
+  .flip-card:active .flip-card-inner,
+  .flip-card:focus .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  .flip-card-back {
+    background-color: #bbcde1;
+    color: white;
+    transform: rotateY(180deg);
+    text-align:center;
+  }
+  .flip-card-back h1{
+    margin-top:80px;
+  }
+  /* GALLERY DESKTOP CSS*/
+  .gallery {
+    display: flex; 
+    flex-wrap: wrap; 
+    flex-direction: row; 
+    padding: 0 4px;
+    margin: 15px;
+    justify-content: center;
+    align-content:center;
+}
+    
+  .gallery-images{
+      display: grid;
+      grid-template: repeat(3, 300px) / repeat(3, 300px);
+      
+  }
+  figcaption{
+      overflow: auto;
+  }
+
+  .myfriends figure img{
+      border: none;
+      margin: 0px;
+      padding: 0px;
+      height: 300px;
+      width: 300px;
+      position: absolute;
+  }
+
+  .myfriends figure figcaption{
+      background: rgba(250, 235, 215,.5);
+      height: 300px;
+      width: 300px;
+      text-align: center;
+      margin: auto;
+      color: black;
+      visibility: hidden;
+      opacity: 0;
+      position: relative;
+      transition: opacity .2s, visibility .2s;
+  }
+
+  .myfriends figure:hover figcaption{
+      visibility: visible;
+      opacity: 1;
+  }
+
+  .k8justateex figure img{
+      border: none;
+      margin: 0px;
+      padding: 0px;
+      height: 300px;
+      width: 300px;
+      position: absolute;
+  }
+
+  .k8justateex figure figcaption{
+      background: rgba(250, 235, 215,.5);
+      height: 300px;
+      width: 300px;
+      text-align: center;
+      margin: auto;
+      color: black;
+      visibility: hidden;
+      opacity: 0;
+      position: relative;
+      transition: opacity .2s, visibility .2s;
+  }
+
+  .k8justateex figure:hover figcaption{
+      visibility: visible;
+      opacity: 1;
+  }
+
+  .parents figure img{
+      border: none;
+      margin: 0px;
+      padding: 0px;
+      height: 300px;
+      width: 300px;
+      position: absolute;
+  }
+
+  .parents figure figcaption{
+      background: rgba(250, 235, 215,.5);
+      height: 300px;
+      width: 300px;
+      text-align: center;
+      margin: auto;
+      color: black;
+      visibility: hidden;
+      opacity: 0;
+      position: relative;
+      transition: opacity .2s, visibility .2s;
+  }
+
+  .parents figure:hover figcaption{
+      visibility: visible;
+      opacity: 1;
+  }
+
+  .possumkingdom figure img{
+      border: none;
+      margin: 0px;
+      padding: 0px;
+      height: 300px;
+      width: 300px;
+      position: absolute;
+  }
+
+  .possumkingdom figure figcaption{
+      background: rgba(250, 235, 215,.5);
+      height: 300px;
+      width: 300px;
+      text-align: center;
+      margin: auto;
+      color: black;
+      visibility: hidden;
+      opacity: 0;
+      position: relative;
+      transition: opacity .2s, visibility .2s;
+  }
+
+  .possumkingdom figure:hover figcaption{
+      visibility: visible;
+      opacity: 1;
+  }
+
+  .roommate figure img{
+      border: none;
+      margin: 0px;
+      padding: 0px;
+      height: 300px;
+      width: 300px;
+      position: absolute;
+  }
+
+  .roommate figure figcaption{
+      background: rgba(250, 235, 215,.5);
+      height: 300px;
+      width: 300px;
+      text-align: center;
+      margin: auto;
+      color: black;
+      visibility: hidden;
+      opacity: 0;
+      position: relative;
+      transition: opacity .2s, visibility .2s;
+  }
+
+  .roommate figure:hover figcaption{
+      visibility: visible;
+      opacity: 1;
+  }
+
+  .campus figure img{
+      border: none;
+      margin: 0px;
+      padding: 0px;
+      height: 300px;
+      width: 300px;
+      position: absolute;
+  }
+
+  .campus figure figcaption{
+      background: rgba(250, 235, 215,.5);
+      height: 300px;
+      width: 300px;
+      text-align: center;
+      margin: auto;
+      color: black;
+      visibility: hidden;
+      opacity: 0;
+      position: relative;
+      transition: opacity .2s, visibility .2s;
+  }
+
+  .campus figure:hover figcaption{
+      visibility: visible;
+      opacity: 1;
+  }
+
+  .dogs figure img{
+      border: none;
+      margin: 0px;
+      padding: 0px;
+      height: 300px;
+      width: 300px;
+      position: absolute;
+  }
+
+  .dogs figure figcaption{
+      background: rgba(250, 235, 215,.5);
+      height: 300px;
+      width: 300px;
+      text-align: center;
+      margin: auto;
+      color: black;
+      visibility: hidden;
+      opacity: 0;
+      position: relative;
+      transition: opacity .2s, visibility .2s;
+  }
+  .dogs figure:hover figcaption{
+      visibility: visible;
+      opacity: 1;
+  }
+
+  .fishing figure img{
+      border: none;
+      margin: 0px;
+      padding: 0px;
+      height: 300px;
+      width: 300px;
+      position: absolute;
+  }
+  .fishing figure figcaption{
+      background: rgba(250, 235, 215,.5);
+      height: 300px;
+      width: 300px;
+      text-align: center;
+      margin: auto;
+      color: black;
+      visibility: hidden;
+      opacity: 0;
+      position: relative;
+      transition: opacity .2s, visibility .2s;
+  }
+  .fishing figure:hover figcaption{
+      visibility: visible;
+      opacity: 1;
+  }
+  .fthe15ex figure img{
+      border: none;
+      margin: 0px;
+      padding: 0px;
+      height: 300px;
+      width: 300px;
+      position: absolute;
+  }
+  .fthe15ex figure figcaption{
+      background: rgba(250, 235, 215,.5);
+      height: 300px;
+      width: 300px;
+      text-align: center;
+      margin: auto;
+      color: black;
+      visibility: hidden;
+      opacity: 0;
+      position: relative;
+      transition: opacity .2s, visibility .2s;
+  }
+  .fthe15ex figure:hover figcaption{
+      visibility: visible;
+      opacity: 1;
+  }
+  /* END DESKTOP TM */
+  p.about-p{
+      text-align:center;
+      padding:.5em;
+      display:block;
+      
+  }
+  img.about-image{
+    width:50%;
+  }
+  p.about-txt{
+      padding:1em;
+      text-align:left;
+      display:inline-block;
+      grid-column:2/span 1;
+  }
+  img.about-image{
+      display:block;
+      margin:10px;
+      width:50%;
+  }
+  .about,.method,.client,.contact{
+    margin-bottom:0px;
+    margin-top:0px;
+  }
+  .sticky{
+    position:fixed;
+    top:0;
+    width:100%;
+  }
+  h1{
+    padding-top:100px;
+  }
+  header p{
+    margin-right:300px;
+    text-align:right;
+  }
+}
+  /*Tablet view */
+
+@media screen and (min-width: 760px) and (max-width: 1025px) and (-webkit-min-device-pixel-ratio: 1) {
+  header.one{
+    background-image:url(../img/ipadbg.png);
+    height:450px;
+  }
+  header#main{
+    margin-bottom:100px;
+  }
+  .kglogo,.fintechimg,.f15img,.umsiimg{
+    margin-left:auto;
+    margin-right:auto;
+    width:450px;
+  }
+  .about-img{
+    width:450px;
+  }
+  .gallery-images{
+    width:642px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  nav li{
+    display:inline;
+    text-align:center;
+    margin-left:25px;
+  }
+  nav{
+    padding:10px;
+    display:flex;
+    justify-content: center;
+    flex-direction:row;
+  }
+  .sticky{
+    position:fixed;
+    top:0;
+    width:100%;
+  }
+  h1{
+    margin-top:40px;
+    text-align:center;
+  
+  }
+  .containerproject{
+    grid-template-columns: 1fr 1.5fr 1.5fr 1fr;
+  }
+}
+
+
+
+@media screen and (prefers-reduced-motion: reduce){
+  html{
+      scroll-behavior: auto; /* Removes scroll animation */
+  }
+
+  .skip a{
+    -webkit-transition: none; /* sets to default setting */
+    transition: none;        /* sets to default setting */
+   }
+
+  /*Turn off parallax*/
+  header.one{
+    background-attachment: initial;
+  }
+  .flip-card:hover .flip-card-inner,
+  .flip-card:focus-within .flip-card-inner,
+  .flip-card:active .flip-card-inner,
+  .flip-card:focus .flip-card-inner{
+    transform:none;
+  }
+  
+  #fading img#top {
+    animation:none;
+  }
+  div.about:hover,div.method:hover,div.client:hover,div.contacts:hover{
+    background-color:white;
+  }
+}

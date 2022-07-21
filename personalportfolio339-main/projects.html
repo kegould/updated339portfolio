@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">
+    <title>Past Projects — Kate Gould</title>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G7MLPRP7H0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-G7MLPRP7H0');
+    </script>
+  </head>
+  <body>
+    <div class="skip"><a href="#main">skip to main content</a></div>
+    <nav class="sticky" id="navbar">
+        <ul>
+          <li><a href="index.html"> main </a></li>
+          <li><a href="projects.html" class="current"> past projects </a></li>
+          <li><a href="personal.html"> about me </a></li>
+          <li><a href="gallery.html"> gallery </a></li>
+
+        </ul>
+      </nav>
+
+      <header id="main">
+        <h1>my work</h1>
+        <p id="projp">here you'll find a description of my past work experience and projects.</p>
+      </header>
+      
+      
+    <main class="containerproject">
+      
+      <div class="kglogo">
+        <img src="img/trashpandalogo.png" alt="trash panda logo">
+      </div>
+
+      <div class="kgsitedesign text">
+        <a id="about"></a>
+        <h2>Trash Panda</h2>
+        <p>In 2021, I worked as a product management intern for Slytrunk's in-house developed app, Trash Panda. Trash Panda allows users to scan barcodes at the grocery store to promote ingredient transparency. I completed client-facing software development tasks in Node.js, was responsible for tracking user data in Metabase, and wrote product briefs on new features. Additionally, the social media content I created resulted in over 40,000 downloads of the app and over 2 million views on TikTok.</p>
+      </div>
+  
+      <div class="fintechimg">
+        <img src="img/MICHIGAN FINTECH.png" alt="michigan fintech logo">
+      </div>
+  
+      <div class="mft text">
+        <a id="method"></a>
+        <h2>Michigan FinTech</h2>
+        <p>As VP of Digital Marketing for Michigan FinTech, the University’s largest financial technology club, I worked to increase membership through producing online content using UX practices and design. Check out our <a href="https://www.instagram.com/michiganfintech/">Instagram</a> or <a href="https://www.linkedin.com/company/michiganfintech">LinkedIn</a> for more information on upcoming events. Beyond working on the executive board of the organization, MFT has taught me so much about the financial technology industry and has truly become a passion of mine.
+        </p>
+      </div>
+
+      <div class="f15img">
+        <img src="img/f15logo.png" alt="f the 15 logo">
+      </div>
+  
+      <div class="f15txt text">
+        <a id="client"></a>
+        <h2>F the 15</h2>
+        <p>After initially being recruited as a student ambassador for social media brand F the Freshman 15, I ultimately came into the role of a graphic designer for their Instagram account and website. This transition combined my love of digital marketing and promoting a healthy lifestyle. Having been a fan of the account, which posts about nutrition in college with over 10k followers, I was able to learn business strategy and creating brand identity from their founders and am so thankful to have worked with this brand.
+        </p>
+      </div>
+
+      <div class="umsiimg">
+        <img src="img/umsi.jpg" alt="umsi logo">
+      </div>
+      
+      <div class="riseuptxt text">
+        <a id="contacts"></a>
+        <h2>Rise Up</h2>
+        <p>This Fall, I acquired a position within the University of Michigan’s School of Information, working as an Undergraduate Research Assistant for Dr. Barbara Ericson’s Rise Up for Computer Science Principles program. The program helps high school students from underrepresented groups prepare for their AP Computer Science Principles exam. Beyond my role as a help session facilitator, I was responsible for keeping track of each student’s data, progress, and success on their online textbook to help the associated research study analyze the success of the program. I presented on topics such as UX, Cybersecurity, and Data Science, and collaborated with peers to ensure our sessions were demonstrating positive trends across our data collections.</p>
+      </div>
+    </main>
+    <footer>
+      <p>kate gould <br/>
+        &copy; 2021</p>
+        <a class="footer" href ="https://www.linkedin.com/in/kate-gould-599818201/" target="_blank">linkedin</a><br>
+    </footer>
+
+    <script>
+      window.onscroll = function() {myFunction()};
+      var navbar = document.getElementById("navbar");
+      var sticky = navbar.offsetTop;
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+  }
+  </script>
+    </body>
+  </html>

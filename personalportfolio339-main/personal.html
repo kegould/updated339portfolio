@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap" rel="stylesheet">
+    <title>About — Kate Gould</title>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-G7MLPRP7H0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-G7MLPRP7H0');
+    </script>
+  </head>
+  
+  <body>
+    <div class="skip"><a href="#main">skip to main content</a></div>
+    <nav class="sticky" id="navbar">
+        <ul>
+          <li><a href="index.html"> main </a></li>
+          <li><a href="projects.html"> past projects </a></li>
+          <li><a href="personal.html" class="current"> about me </a></li>
+          <li><a href="gallery.html"> gallery </a></li>
+
+        </ul>
+      </nav>
+      <header>
+      <h1  id="main">about</h1>
+    </header>
+    <main>
+      <p class="about-p">I am a passionate information science major, hoping to further develop my knowledge of information environments and data science.</p>
+        <hr class="about-p">
+    
+      <div class="about-me">
+        <p class="about-txt">I am a rising Senior at the University of Michigan-Ann Arbor from Dallas, Texas. I am studying in the school of Information, focusing on Information Analysis and additionally am pursuing a minor in food studies. Outside of class, I work as a Product Management Intern for Slytrunk, am involved in the University's FinTech club, and volunteer with my Sorority, Alpha Chi Omega. When I'm not partaking in any of these activities, I love to cook, workout, and go on long walks throughout Ann Arbor.</p>
+        <p class="about-txt">Some of my relevant coursework includes SI 330: Data Manipulation, SI 425: Introduction to User Modelling, SI 339: Web Design, Development and Acessibility, and SI 206: Data-Oriented Programming. I am proficient in Python, HTML, CSS, Javascript, SQL, Cypress, numpy, and Pandas. Additionally, the past two years I recieved 2021 University Honors and am a James B. Angell Scholar.</p>
+        <p class="about-txt">Now that I've told you a little about myself, feel free to reach out and <a href=index.html#form>contact</a> me with any questions and take a look at some of my past work!</p>
+        <div id="fading">
+        <img class="about-img" id="top" src="img/headshot.jpg" alt="head shot">
+        <img class="about-img" id="bottom" src="img/voted.jpg" alt="selfie from the day i voted">
+        </div>
+      </div>
+    </main>
+
+      <footer>
+        <p>kate gould <br/>
+          &copy; 2021</p>
+          <a class="footer" href ="https://www.linkedin.com/in/kate-gould-599818201/" target="_blank">linkedin</a><br>
+      </footer>
+
+
+      <script>
+        window.onscroll = function() {myFunction()};
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+          navbar.classList.remove("sticky");
+        }
+    }
+    
+      </script>
+  </body>
